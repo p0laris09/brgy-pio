@@ -1,4 +1,4 @@
-{% if not (directory is defined and directory matches '/admin/') %}
+{% if not (directory is defined and directory matches '/admin/') %} 
   <div class="layout-container">
     
     {# Header Section #}
@@ -31,5 +31,5 @@
     
   </div>
 {% else %}
-  {# Admin theme is detected, do nothing #}
+  {# Admin theme is detected, do not remove this block to ensure access to the admin page #}
 {% endif %}
