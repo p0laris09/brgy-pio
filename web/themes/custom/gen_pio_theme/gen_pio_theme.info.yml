@@ -1,0 +1,16 @@
+name: 'Gen Pio Theme'
+type: theme
+description: 'A custom Drupal 10 theme'
+core_version_requirement: ^10
+base theme: olivero
+package: Custom
+libraries:
+  - gen_pio_theme/global-styling
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  sidebar: 'Sidebar'
+  content: 'Main Content'
+  footer: 'Footer'
+

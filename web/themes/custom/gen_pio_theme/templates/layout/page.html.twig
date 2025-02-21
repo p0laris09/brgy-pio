@@ -1,0 +1,35 @@
+{% if not (directory is defined and directory matches '/admin/') %}
+  <div class="layout-container">
+    
+    {# Header Section #}
+    {% block header %}
+      {% include '@gen_pio_theme/layout/header.html.twig' %}
+    {% endblock %}
+
+
+
+    {# Main Content Section #}
+    <main id="main-content">
+      {% block carousel %}
+        {% include '@gen_pio_theme/layout/carousel.html.twig' %}
+      {% endblock %}
+
+      {% block first_section %}
+        {% include '@gen_pio_theme/layout/first-section.html.twig' %}
+      {% endblock %}
+
+      {% block second_section %}
+        {% include '@gen_pio_theme/layout/second-section.html.twig' %}
+      {% endblock %}
+
+    </main>
+
+    {# Footer Section #}
+    {% block footer %}
+      {% include '@gen_pio_theme/layout/footer.html.twig' %}
+    {% endblock %}
+    
+  </div>
+{% else %}
+  {# Admin theme is detected, do nothing #}
+{% endif %}

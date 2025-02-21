@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Plugin\BlockPluginInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_layout_help($route_name, $route_match) {
+  switch ($route_name) {
+    case 'help.page.custom_layout':
+      return t('This module provides custom blocks for the website layout.');
+  }
+}

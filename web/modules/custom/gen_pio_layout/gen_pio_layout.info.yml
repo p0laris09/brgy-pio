@@ -1,0 +1,7 @@
+name: 'Custom Layout'
+type: module
+description: 'Provides custom blocks for header, carousel, sections, and footer.'
+core_version_requirement: ^10
+package: 'Custom'
+dependencies:
+  - drupal:block
